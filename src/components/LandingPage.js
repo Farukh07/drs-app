@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FaqComponent from './faq-component/FaqComponent';
 import HomeComponent from './Home/HomeComponent';
 import ReviewComponent from './review-component/ReviewComponent';
 
@@ -32,7 +33,7 @@ class LandingPage extends Component {
 
                 </section>
                 <section class="main-banner" id="faq">
-
+                    <FaqComponent/>
                 </section>
             </div>
         );
