@@ -36,9 +36,211 @@
     transform: rotate(360deg);
   }
 }
-
 .tableStyle{
   margin: 20px !important;
   width: 965px;
   border: 2px solid lightGrey; 
+}
+.main-header{
+  height: 90px;
+}
+#topnav {
+	position:fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index:10;
+	background-color: transparent;
+	border: 0;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	background:#fff; 
+}
+#topnav .header-container {
+  flex-direction: row;
+}
+#topnav .logo {
+	float: left;
+	color: #3c4858 !important;
+	text-align:left;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+#topnav #navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+#topnav .navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+#topnav .navigation-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#topnav .navigation-menu>li {
+  float: left;
+  display: block;
+  position: relative;
+  margin: 0 5px;
+}
+#topnav .navigation-menu>li>a {
+  display: block;
+color: #000;
+font-size: 16px;
+background-color: transparent !important;
+font-weight: 500;
+line-height: 24px;
+transition: all 0.5s;
+padding-left: 6px;
+padding-right: 6px;
+text-decoration: none;
+}
+@media (min-width: 992px){
+#topnav .navigation-menu>li>a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    min-height: 62px;
+}
+}
+@media (min-width: 1124px) and (max-width: 1280px){
+#topnav .navigation-menu>li>a {
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+    font-size: 13px !important;
+}
+}
+#topnav .navigation-menu>li:hover, #topnav .navigation-menu>li.active>a {
+  color: #ec4924 !important;
+}
+.main-banner {
+  padding: 20px 0 !important;
+  background-position: center;
+  position: relative;
+  background-color: #000c26;
+  background: url(../src/assets/images/cosmos-g6e1a8750f_1920.jpg) center right no-repeat;
+  background-size: cover;
+  height: 85vh;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+.card {
+  width: 80%;
+  margin: 2% 10%;
+}
+.review-main {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(253, 253, 244);
+}
+.quater-row {
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  text-align: justify;
+}
+.title-row{
+  font-weight: 600;
+  color: #000;
+}
+.title-row>span{
+  background-color: plum;
+  padding: 2px;
+  margin-left: 5px;
+  font-weight: normal !important;
+  font-size: small;
+}
+.period-row{
+  color: #a5a0a0;
+}
+#chartdiv {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+.view-review{
+  color: #27dede;
+  margin-top: auto;
+}
+.org-chart{
+  width: 80%;
+  height: 250px;
+  margin: 2% 10%;
+}
+.question-section {
+  background: transparent;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: rgba(88, 181, 252, 0.3) 0px 1px 2px 0px,
+    rgba(135, 143, 28, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  width: 92vw;
+}
+
+.question-align {
+  align-items: center;
+  display: flex;
+  min-height: 10px;
+  text-align: left;
+}
+
+.question-align h4 {
+  margin-left: 8px;
+  color: #fff;
+}
+
+.question-styling {
+  font-size: 17px;
+  width: 100%;
+}
+
+.question-icon {
+  background: none;
+  border: none;
+  color: #1bae2f;
+  cursor: pointer;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.answer-divider {
+  border-top: 1px solid lightgray;
+}
+
+.answer {
+  margin-left: 8px;
+  margin-right: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  text-align: left;
+  color: wheat;
+}
+.q-and-a{
+  margin-top: 10px;
+}
+.faq-header{
+  color: aquamarine;
+}
+.que{
+  max-height: 0px;
+}
+.ans{
+ max-height: 40px;
 }

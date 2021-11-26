@@ -6,7 +6,6 @@ const OrgChartComponent = (props, ref) => {
     let chart = null;
   
     useLayoutEffect(() => {
-        debugger;
         console.log('Props', props);
         const orgData =  props.data?.orgData ?? props.data;
       if (orgData && d3Container.current) {
@@ -28,7 +27,7 @@ const OrgChartComponent = (props, ref) => {
     }, [props.data, d3Container.current]);
   
     return (
-      <div>
+      <div className='org-chart'>
         <div ref={d3Container} />
       </div>
     );
