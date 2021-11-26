@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HomeComponent from '../Home/HomeComponent';
 
 class HeaderComponent extends Component {
     render() {
