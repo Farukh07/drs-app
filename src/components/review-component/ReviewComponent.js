@@ -22,8 +22,8 @@ class ReviewComponent extends Component {
       // Create chart
       var chart = root.container.children.push(am5percent.PieChart.new(root, {
         layout: root.verticalLayout,
-        innerRadius: am5.percent(30),
-        outerWidth: am5.percent(10)
+        innerRadius: am5.percent(50),
+        radius: am5.percent(60)
       }));
       
       
@@ -35,11 +35,11 @@ class ReviewComponent extends Component {
       }));
       
       series.labels.template.setAll({
-        textType: "circular",
+        // textType: "circular",
+        fontSize: 10,
         centerX: 0,
         centerY: 0
       });
-      
       
       // Set data
       // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
@@ -53,11 +53,24 @@ class ReviewComponent extends Component {
       
       // Create legend
       var legend = chart.children.push(am5.Legend.new(root, {
-        centerX: am5.percent(20),
-        x: am5.percent(20),
+        centerX: am5.percent(5),
+        x: am5.percent(25),
         marginTop: 5,
         marginBottom: 5,
       }));
+
+      legend.markers.template.setAll({
+        width: 10,
+        height: 10,
+      });
+
+      legend.labels.template.setAll({
+        fontSize: 10,
+      });
+
+      legend.valueLabels.template.setAll({
+        fontSize: 10
+      })
       
       legend.data.setAll(series.dataItems);
       
@@ -80,9 +93,10 @@ class ReviewComponent extends Component {
                 <div className="period-row" >
                   Jan 01, 2021 - Mar 31,2021
                 </div>
+                <span className='view-review'>View/Manage Reviews</span>
               </div>
                 <div id="chartdiv"></div>
-                <span className='view-review'>View/Manage Reviews</span>
+                
           </div>
           </div>
         );

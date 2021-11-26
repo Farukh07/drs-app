@@ -116,13 +116,13 @@ text-decoration: none;
   color: #ec4924 !important;
 }
 .main-banner {
-  padding: 80px 0 !important;
+  padding: 20px 0 !important;
   background-position: center;
   position: relative;
   background-color: #000c26;
   background: url(../src/assets/images/cosmos-g6e1a8750f_1920.jpg) center right no-repeat;
   background-size: cover;
-  min-height: 500px;
+  height: 85vh;
   width: 100%;
   overflow: hidden;
   color: #fff;
@@ -133,7 +133,8 @@ text-decoration: none;
 }
 .review-main {
   flex-direction: row;
-  /* display: flex; */
+  display: flex;
+  width: 100%;
   padding: 20px;
   background-color: rgb(253, 253, 244);
 }
@@ -158,12 +159,17 @@ text-decoration: none;
   color: #a5a0a0;
 }
 #chartdiv {
-  max-width: 50%;
-  height: 400px;
+  width: 40%;
+  height: 200px;
   display: flex;
   justify-content: flex-end;
 }
 .view-review{
   color: #27dede;
-  display: flex;
+  margin-top: auto;
+}
+.org-chart{
+  width: 80%;
+  height: 250px;
+  margin: 2% 10%;
 }
