@@ -107,10 +107,10 @@ const GlobalTableComponent = () => {
 
   return (
     <Box>
-      <TableContainer className="tableStyle" style={{ maxHeight: 550, maxWidth: 923 }}>
+      <TableContainer className="tableStyle" style={{ maxHeight: 400, maxWidth: 900 }}>
         <Table
           aria-labelledby="tableTitle" 
-          style={{ width: 900, height: 50 }}
+          style={{ width: 900, height: 30 }}
         >
           <TableHead>
           {/* {headCells.map((headCell) => ( */}

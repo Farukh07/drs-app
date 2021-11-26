@@ -37,9 +37,10 @@
   }
 }
 .tableStyle{
-  margin: 20px !important;
+  margin: 20px 180px !important;
   width: 965px;
   border: 2px solid lightGrey; 
+  background: #fff;
 }
 .main-header{
   height: 90px;

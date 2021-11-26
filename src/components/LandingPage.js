@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FaqComponent from './faq-component/FaqComponent';
 import HomeComponent from './Home/HomeComponent';
 import ReviewComponent from './review-component/ReviewComponent';
+import GlobalTableComponent from './Table/GlobalTableComponent';
 
 class LandingPage extends Component {
     render() {
@@ -30,7 +31,10 @@ class LandingPage extends Component {
                     </div>
                 </section>
                 <section class="main-banner" id="performance">
-
+                <h4 className="faq-header">
+                  Performance Table
+                </h4>
+                <GlobalTableComponent/>
                 </section>
                 <section class="main-banner" id="faq">
                     <FaqComponent/>
