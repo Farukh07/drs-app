@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import HomeComponent from '../Home/HomeComponent';
-
+import PerformanceReviewComponent from '../PerformanceReview/PerformanceReviewComponent';
 class HeaderComponent extends Component {
     render() {
         return (
+            <div className="row">
+                <PerformanceReviewComponent></PerformanceReviewComponent>
+            </div>
             <header id="topnav" className="py-lg-2 defaultscroll sticky">
                 <div className="container-fluid">
                     <div className="header-container">
