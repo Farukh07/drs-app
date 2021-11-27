@@ -42,3 +42,51 @@
   width: 965px;
   border: 2px solid lightGrey; 
 }
+
+.reviewStyle{
+  margin: 20px !important;
+  max-width: 1000px;
+  max-height: 570px;
+  overflow-y: scroll;
+  border: 2px solid grey; 
+}
+
+.reviewQuestion{
+  text-align: left;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-left: 7px;
+}
+
+.questionText{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px 0px;
+}
+
+.margin{
+  margin: 12px 0px 8px 0px;
+}
+.greyBtn {
+  background-color: rgb(199 181 181 / 30%) !important;
+  color: black !important;
+}
+.blueBtn {
+  background-color : #dc5627 !important;
+  color: white !important;
+}
+
+.TextFieldStyle{
+  margin: 7px
+}
+
+.reviewHeader{
+  display: flex;
+  flex-direction: row nowrap;
+}
+
+
+
