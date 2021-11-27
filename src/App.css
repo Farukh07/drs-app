@@ -147,6 +147,10 @@ text-decoration: none;
   color: #fff;
 }
 .card {
+  box-shadow: 0 2px 1px -1px rgba(0 0 0 / 22%), 
+                0 1px 1px 0 rgba(0 0 0 / 22%), 
+                0 1px 3px 0 rgba(0 0 0 / 22%);
+  height: 500px;
   width: 30%;
   margin: 2% 0% 2% 2%;
   background-color: #fff !important;
@@ -180,10 +184,13 @@ text-decoration: none;
   margin: 20px 0px;
 }
 .svg-chart-container{
-  height: 400px;
+  height: 500px;
   background-clip: border-box;
   background-color: #fff !important;
   padding-left: 30px;
+  box-shadow: 0 2px 1px -1px rgba(0 0 0 / 22%), 
+                0 1px 1px 0 rgba(0 0 0 / 22%), 
+                0 1px 3px 0 rgba(0 0 0 / 22%);
     /* border: 1px solid rgba(0,0,0,.125); */
     /* border-radius: 0.25rem; */
 }
