@@ -16,13 +16,10 @@ const HomeComponent = (props, ref) => {
     }, []);
 
     return (
-      <div>
-        {/* <OrgChartComponent
+        <OrgChartComponent
           onNodeClick={onNodeClick}
           data={orgData}
-        /> */}
-        <GlobalTableComponent/>
-      </div>
+        />
     );
 };
 

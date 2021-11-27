@@ -6,7 +6,6 @@ const OrgChartComponent = (props, ref) => {
     let chart = null;
   
     useLayoutEffect(() => {
-        debugger;
         console.log('Props', props);
         const orgData =  props.data?.orgData ?? props.data;
       if (orgData && d3Container.current) {
@@ -17,7 +16,7 @@ const OrgChartComponent = (props, ref) => {
           .container(d3Container.current)
           .data(orgData)
           .svgWidth(500)
-          .initialZoom(0.4)
+          .initialZoom(0.3)
           .onNodeClick(d => {
             console.log(d + " node clicked");
             console.log("props", Object.keys(props), d);
@@ -28,7 +27,7 @@ const OrgChartComponent = (props, ref) => {
     }, [props.data, d3Container.current]);
   
     return (
-      <div>
+      <div className='org-chart'>
         <div ref={d3Container} />
       </div>
     );
