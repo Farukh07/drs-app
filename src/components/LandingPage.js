@@ -8,9 +8,10 @@ class LandingPage extends Component {
     render() {
         return (
             <div>
-                <section class="main-banner" id="dashboard">
-                        <ReviewComponent />
-                        <HomeComponent />
+                <section class="main-banner" id="dashboard"> 
+                    <HomeComponent />
+                    <ReviewComponent />
+                        
                 </section>
                 <section class="main-banner" id="reviews">
                     <div class="container">

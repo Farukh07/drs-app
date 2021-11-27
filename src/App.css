@@ -121,8 +121,6 @@ text-decoration: none;
   color: #ec4924 !important;
 }
 .main-banner {
-  display: flex;
-  flex-direction: row;
   padding: 20px 0 !important;
   background-position: center;
   position: relative;
@@ -135,6 +133,13 @@ text-decoration: none;
   color: #fff;
   justify-content: center;
 }
+
+.landing_screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .performance-table-banner {
   padding: 20px 0 !important;
   background-position: center;
@@ -147,14 +152,20 @@ text-decoration: none;
   color: #fff;
 }
 .card {
-  width: 30%;
-  margin: 2% 0% 2% 2%;
+  width: 98vw;
+  margin: 5px 13px;
+  height: 186px;
   background-color: #fff !important;
   border: none !important;
   border-radius: 0px !important;
 }
 .review-main {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 100vw;
 }
 .quater-row {
   flex-direction: column;
@@ -180,7 +191,8 @@ text-decoration: none;
   margin: 20px 0px;
 }
 .svg-chart-container{
-  height: 400px;
+  height: 300px;
+  width: 98vw !important;
   background-clip: border-box;
   background-color: #fff !important;
   padding-left: 30px;
@@ -191,8 +203,8 @@ text-decoration: none;
   color: #27dede;
 }
 .org-chart{
-  width: 700px;
-  margin: 2% 2% 2% 0%;
+  /* width: 700px;
+  margin: 2% 2% 2% 0%; */
 }
 .question-section {
   background: #fff;

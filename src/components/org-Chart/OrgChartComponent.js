@@ -15,8 +15,8 @@ const OrgChartComponent = (props, ref) => {
         chart
           .container(d3Container.current)
           .data(orgData)
-          .svgWidth(500)
-          .initialZoom(0.3)
+          .svgWidth(2)
+          .initialZoom(0.5)
           .onNodeClick(d => {
             console.log(d + " node clicked");
             console.log("props", Object.keys(props), d);

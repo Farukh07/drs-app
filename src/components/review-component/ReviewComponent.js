@@ -22,7 +22,7 @@ class ReviewComponent extends Component {
       // Create chart
       var chart = root.container.children.push(am5percent.PieChart.new(root, {
         layout: root.verticalLayout,
-        innerRadius: am5.percent(50),
+        innerRadius: am5.percent(70),
         radius: am5.percent(60)
       }));
       
@@ -87,7 +87,7 @@ class ReviewComponent extends Component {
           <div className='review-main'>
               <div className="quater-row">
                 <div className="title-row">
-                  Q1 - 2020 
+                  Review Q1 - 2020 
                   <span>ONGOING</span>
                 </div>
                 <div className="period-row" >
