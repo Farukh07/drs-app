@@ -4,9 +4,6 @@ import PerformanceReviewComponent from '../PerformanceReview/PerformanceReviewCo
 class HeaderComponent extends Component {
     render() {
         return (
-            <div className="row">
-                <PerformanceReviewComponent></PerformanceReviewComponent>
-            </div>
             <header id="topnav" className="py-lg-2 defaultscroll sticky">
                 <div className="container-fluid">
                     <div className="header-container">

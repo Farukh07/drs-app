@@ -33,7 +33,7 @@ const PerformanceReviewComponent = () => {
                 "active": false
             }
         ];
-        const reviewQuestions = [
+        const reviewQuestion = [
             {
                 questionType: 'Performance Summary',
                 displayOptions: true,
@@ -41,7 +41,8 @@ const PerformanceReviewComponent = () => {
                     'Key Contributions/ Milestones Achieved',
                     'Overall Performance Summary - Hits & Misses',
                     'Overall Performance rating(2020-21)'
-                ]
+                ],
+                options: [ buttons, buttons, buttons ]
             },
             {
                 questionType: 'Development Feedback',
@@ -50,7 +51,8 @@ const PerformanceReviewComponent = () => {
                     'Key Strengths',
                     'Development Areas',
                     'Next Steps'
-                ]
+                ],
+                options: [ buttons, buttons, buttons ]
             },
             {
                 questionType: 'Development Plan',
@@ -59,25 +61,38 @@ const PerformanceReviewComponent = () => {
                     'Criticality',
                     'Criticality reason- Niche Skills/Performance/ Business Critical',
                     'Rag Status - Red/ Amber/ Green'
-                ]
+                ],
+                options: [ buttons, buttons, buttons ]
             },
             {
                 questionType: 'Career Trajectory',
                 displayOptions: false,
                 questions: [
                     'Next steps - Promotion/ Role change/ Continue in role/ Realignment ',
-                ]
+                ],
+                options: [ buttons, buttons, buttons ]
             }
 
             
         ]
-        const [optionalButton, setSelectedOption] = React.useState(buttons);
+        const [reviewQuestions, setSelectedOption] = React.useState(reviewQuestion);
 
-        const toggleButton = (id) => {
-            const buttonDetails = [...buttons];
-            const index = buttons.findIndex(stat => stat.id === id);
-            buttonDetails[index] = {...buttonDetails[index], active: !buttonDetails[index].active};
-            setSelectedOption([...buttonDetails]);
+        const toggleButton = (que, index, id) => {
+            
+            let buttonDetails = [...buttons];
+            buttonDetails[id-1] =  {...buttonDetails[id-1], active: !buttonDetails[id-1].active};
+            let optionDetails = [...que.options ];
+            optionDetails[index] =  [ ...buttonDetails ];
+            const queDetails = { ...que, options: optionDetails  };
+            const queIndex = reviewQuestion.findIndex(object => {
+                return object.questionType === que.questionType;
+              }); 
+              
+              if (queIndex !== -1) {
+                reviewQuestions[queIndex] = queDetails;
+              }
+            debugger
+            setSelectedOption([...reviewQuestions]);
         };
         return (
             <div>
@@ -95,11 +110,11 @@ const PerformanceReviewComponent = () => {
                                     <div  className="reviewQuestion">
                                         <div className="margin">{index+1}. {ele}</div>
                                         <ButtonGroup size="large" aria-label="large button group"  className="TextFieldStyle" >
-                                            { que.displayOptions && optionalButton.map(data => {
+                                            { que.displayOptions && que.options[index].map(data => {
                                                 return (
                                                     <Button
                                                         className = { data.active ? "blueBtn" : "greyBtn"} 
-                                                        variant="outlined"  onClick={() => toggleButton(data.id)}
+                                                        variant="outlined"  onClick={() => toggleButton(que, index, data.id)}
                                                         >
                                                         {data.label}
                                                     </Button>
