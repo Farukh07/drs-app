@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import HomeComponent from '../Home/HomeComponent';
-import ReviewComponent from '../Review/ReviewComponent';
+import PerformanceReviewComponent from '../PerformanceReview/PerformanceReviewComponent';
 class HeaderComponent extends Component {
     render() {
         return (
             <div className="row">
-                <ReviewComponent></ReviewComponent>
+                <PerformanceReviewComponent></PerformanceReviewComponent>
             </div>
         );
     }

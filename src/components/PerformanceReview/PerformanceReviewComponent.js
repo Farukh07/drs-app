@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 // import ToggleButton from './toggleButton';
 import SearchBar from './SearchBar';
-const ReviewComponent = () => {
+const PerformanceReviewComponent = () => {
              
         const buttons = [
             {
@@ -121,4 +121,4 @@ const ReviewComponent = () => {
         )
 }
 
-export default ReviewComponent
+export default PerformanceReviewComponent
