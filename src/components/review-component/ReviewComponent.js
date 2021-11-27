@@ -93,10 +93,9 @@ class ReviewComponent extends Component {
                 <div className="period-row" >
                   Jan 01, 2021 - Mar 31,2021
                 </div>
-                <span className='view-review'>View/Manage Reviews</span>
               </div>
                 <div id="chartdiv"></div>
-                
+                <span className='view-review'>View/Manage Reviews</span>
           </div>
           </div>
         );

@@ -37,10 +37,10 @@
   }
 }
 .tableStyle{
-  margin: 20px 180px !important;
-  width: 965px;
+  margin: 20px !important;
   border: 2px solid lightGrey; 
   background: #fff;
+  justify-content: center;
 }
 .main-header{
   height: 90px;
@@ -94,7 +94,7 @@
 #topnav .navigation-menu>li>a {
   display: block;
 color: #000;
-font-size: 16px;
+font-size: 18px;
 background-color: transparent !important;
 font-weight: 500;
 line-height: 24px;
@@ -114,40 +114,51 @@ text-decoration: none;
 #topnav .navigation-menu>li>a {
     padding-left: 4px;
     padding-right: 4px;
-    font-size: 14px;
-    font-size: 13px !important;
+    font-size: 18px;
 }
 }
 #topnav .navigation-menu>li:hover, #topnav .navigation-menu>li.active>a {
   color: #ec4924 !important;
 }
 .main-banner {
+  display: flex;
+  flex-direction: row;
   padding: 20px 0 !important;
   background-position: center;
   position: relative;
-  background-color: #000c26;
-  background: url(../src/assets/images/cosmos-g6e1a8750f_1920.jpg) center right no-repeat;
+  background-color: rgb(240 234 234);
+  /* background: url(../src/assets/images/cosmos-g6e1a8750f_1920.jpg) center right no-repeat; */
   background-size: cover;
   height: 85vh;
   width: 100%;
   overflow: hidden;
   color: #fff;
+  justify-content: center;
+}
+.performance-table-banner {
+  padding: 20px 0 !important;
+  background-position: center;
+  position: relative;
+  background-color: rgb(240 234 234);
+  /* background: url(../src/assets/images/cosmos-g6e1a8750f_1920.jpg) center right no-repeat; */
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
 }
 .card {
-  width: 80%;
-  margin: 2% 10%;
+  width: 30%;
+  margin: 2% 0% 2% 2%;
+  background-color: #fff !important;
+  border: none !important;
+  border-radius: 0px !important;
 }
 .review-main {
-  flex-direction: row;
-  display: flex;
-  width: 100%;
   padding: 20px;
-  background-color: rgb(253, 253, 244);
 }
 .quater-row {
   flex-direction: column;
   display: flex;
-  margin-top: 50px;
   text-align: justify;
 }
 .title-row{
@@ -165,22 +176,26 @@ text-decoration: none;
   color: #a5a0a0;
 }
 #chartdiv {
-  width: 40%;
-  height: 200px;
-  display: flex;
-  justify-content: flex-end;
+  height: 250px;
+  margin: 20px 0px;
+}
+.svg-chart-container{
+  height: 400px;
+  background-clip: border-box;
+  background-color: #fff !important;
+  padding-left: 30px;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    /* border-radius: 0.25rem; */
 }
 .view-review{
   color: #27dede;
-  margin-top: auto;
 }
 .org-chart{
-  width: 80%;
-  height: 250px;
-  margin: 2% 10%;
+  width: 700px;
+  margin: 2% 2% 2% 0%;
 }
 .question-section {
-  background: transparent;
+  background: #fff;
   border: 1px solid lightgray;
   border-radius: 8px;
   box-shadow: rgba(88, 181, 252, 0.3) 0px 1px 2px 0px,
@@ -198,7 +213,7 @@ text-decoration: none;
 
 .question-align h4 {
   margin-left: 8px;
-  color: #fff;
+  color: #000;
 }
 
 .question-styling {
@@ -209,7 +224,7 @@ text-decoration: none;
 .question-icon {
   background: none;
   border: none;
-  color: #1bae2f;
+  color: #000;
   cursor: pointer;
   font-size: 22px;
   margin-left: auto;
@@ -231,17 +246,21 @@ text-decoration: none;
   overflow: hidden;
   transition: max-height 0.6s ease;
   text-align: left;
-  color: wheat;
+  color: #ec4924;
+  background-color: #fff;
 }
 .q-and-a{
   margin-top: 10px;
 }
 .faq-header{
-  color: aquamarine;
+  color: #ec4924;
 }
 .que{
   max-height: 0px;
 }
 .ans{
  max-height: 40px;
+}
+.progress-bar{
+  background-color: #ec4924 !important;
 }

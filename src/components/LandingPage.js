@@ -30,10 +30,7 @@ class LandingPage extends Component {
 
                     </div>
                 </section>
-                <section class="main-banner" id="performance">
-                <h4 className="faq-header">
-                  Performance Table
-                </h4>
+                <section class="performance-table-banner" id="performance">
                 <GlobalTableComponent/>
                 </section>
                 <section class="main-banner" id="faq">

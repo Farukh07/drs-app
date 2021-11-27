@@ -11,14 +11,14 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import ReactStars from "react-rating-stars-component";
 
 const rows = [
-  {name:'Ruchika', performance: 40, rating: 3, comment:'Average', id:23},
-  {name:'Rahul', performance: 80, rating: 2, comment:'Good', id:24},
-  {name:'Sandeep', performance: 90, rating: 3, comment:'Outstanding Performance', id:25},
-  {name:'Aryan', performance: 50, rating: 3, comment:'Average', id:26},
-  {name:'Neha', performance: 75, rating: 4, comment:'Average', id:27},
-  {name:'Shweta', performance: 85, rating: 2, comment:'Outstanding Performance', id:28},
-  {name:'Garima', performance: 65, rating: 2, comment:'Good', id:29},
-  {name:'Ben', performance: 50, rating: 2, comment:'Good', id:30}
+  {name:'Ruchika Chauhan', performance: 40, rating: 3, comment:'Average', id:23},
+  {name:'Rahul Singh', performance: 80, rating: 2, comment:'Good', id:24},
+  {name:'Sandeep Dhiman', performance: 90, rating: 3, comment:'Outstanding Performance', id:25},
+  {name:'Aryan Khan', performance: 50, rating: 3, comment:'Average', id:26},
+  {name:'Neha Garg', performance: 75, rating: 4, comment:'Average', id:27},
+  {name:'Shweta Srivastav', performance: 85, rating: 2, comment:'Outstanding Performance', id:28},
+  {name:'Garima Singh', performance: 65, rating: 2, comment:'Good', id:29},
+  {name:'Ben Stokes', performance: 50, rating: 2, comment:'Good', id:30}
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -55,7 +55,7 @@ const headCells = [
     numeric: false,
     disablePadding: true,
     label: 'Name',
-    minWidth: 120
+    minWidth: 150
   },
   {
     id: 'performance',
@@ -63,14 +63,14 @@ const headCells = [
     disablePadding: false,
     label: 'Performance',
     align: "center",
-    minWidth: 200,
+    minWidth: 280,
     format: (value) => (
       <ProgressBar animated now={value} label={value + '%'}/>
     ),
   },
   {
     id: 'rating',
-    minWidth: 200,
+    minWidth: 250,
     disablePadding: false,
     label: 'Rating',
     format: (data) => (
@@ -85,7 +85,7 @@ const headCells = [
   },
   {
     id: 'comment',
-    minWidth: 360,
+    minWidth: 250,
     disablePadding: false,
     label: 'Comment',
   },
@@ -107,10 +107,10 @@ const GlobalTableComponent = () => {
 
   return (
     <Box>
-      <TableContainer className="tableStyle" style={{ maxHeight: 400, maxWidth: 900 }}>
+      <TableContainer className="tableStyle" style={{ maxHeight: 400, maxWidth: '97vw' }}>
         <Table
+          stickyHeader
           aria-labelledby="tableTitle" 
-          style={{ width: 900, height: 30 }}
         >
           <TableHead>
           {/* {headCells.map((headCell) => ( */}
@@ -120,7 +120,7 @@ const GlobalTableComponent = () => {
                         <TableCell
                           key={column.id}
                           align={column.align}
-                          style={{ minWidth: column.minWidth }}
+                          style={{ minWidth: column.minWidth, color: 'black', backgroundColor: 'rgb(196, 192, 192)', fontWeight: 600 }}
                           sortDirection={orderBy === column.id ? order : false}
                         >
                         <TableSortLabel

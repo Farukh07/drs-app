@@ -16,12 +16,10 @@ const HomeComponent = (props, ref) => {
     }, []);
 
     return (
-      <div>
         <OrgChartComponent
           onNodeClick={onNodeClick}
           data={orgData}
         />
-      </div>
     );
 };
 

@@ -3,10 +3,12 @@ import './App.css';
 import HeaderComponent from './components/header-component/HeaderComponent';
 import LandingPage from './components/LandingPage';
 import ReviewComponent from './components/review-component/ReviewComponent';
+import Scrollbars from 'react-custom-scrollbars';
 
 function App() {
   return (
-    <div className="App">
+    <Scrollbars style={{ width: '100wh', height: '100vh' }}>
+        <div className="App">
       <div className="main-header">
         <HeaderComponent />
       </div>
@@ -14,6 +16,7 @@ function App() {
         <LandingPage />
       </div>
     </div>
+      </Scrollbars>
   );
 }
 

@@ -13,9 +13,6 @@ class HeaderComponent extends Component {
                                 <li className="active"><a href="#dashboard">Dashboard</a></li>
                                 <li><a href="#reviews">Reviews</a></li>
                                 <li><a href="#performance">Performance</a></li>
-
-                                <li><a href="#about">About Incedo</a></li>
-
                                 <li><a href="#faq">FAQ<span className="text-lowercase">s</span></a> </li>
 
                             </ul>
