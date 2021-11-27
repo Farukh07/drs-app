@@ -1,32 +1,32 @@
 [
     {
         "id": 1,
-        "question": "What is the name of hackathon?",
-        "answer": "Avishkaar",
+        "question": "What is DRS (Dimension Review System)?",
+        "answer": "It is cloud based, formal, multi-dimensional assessment system to help managers evaluate their subordinate's work performance.",
         "active": false
     },
     {
         "id": 2,
-        "question": "What is the name of hackathon?",
-        "answer": "Avishkaar",
+        "question": "Which components are present in Dashbord page?",
+        "answer": "Dashboard contains two components: Reviews status component and Organisational Chart.",
         "active": false
     },
     {
         "id": 3,
-        "question": "What is the name of hackathon?",
-        "answer": "Avishkaar",
+        "question": "What is the use of Review page?",
+        "answer": "It can be used for submitting review of an employee.",
         "active": false
     },
     {
         "id": 4,
-        "question": "What is the name of hackathon?",
-        "answer": "Avishkaar",
+        "question": "What does Performance page shows?",
+        "answer": "It shows the rating and performance related data of all the employees aligned under the manager.",
         "active": false
     },
     {
         "id": 5,
-        "question": "What is the name of hackathon?",
-        "answer": "Avishkaar",
+        "question": "What is the use of org-chart?",
+        "answer": "It shows the heirarchical structure under a particular manager and also it can be used to filter out performance table data by clicking on a particular node.",
         "active": false
     }
 ]

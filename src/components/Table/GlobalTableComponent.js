@@ -11,14 +11,14 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import ReactStars from "react-rating-stars-component";
 
 const rows = [
-  {name:'Ruchika Chauhan', performance: 40, rating: 3, comment:'Average', id:23},
-  {name:'Rahul Singh', performance: 80, rating: 2, comment:'Good', id:24},
-  {name:'Sandeep Dhiman', performance: 90, rating: 3, comment:'Outstanding Performance', id:25},
+  {name:'Ruchika Chauhan', performance: 40, rating: 2, comment:'Poor', id:23},
+  {name:'Rahul Singh', performance: 80, rating: 4, comment:'Good', id:24},
+  {name:'Sandeep Dhiman', performance: 90, rating: 5, comment:'Outstanding Performance', id:25},
   {name:'Aryan Khan', performance: 50, rating: 3, comment:'Average', id:26},
-  {name:'Neha Garg', performance: 75, rating: 4, comment:'Average', id:27},
-  {name:'Shweta Srivastav', performance: 85, rating: 2, comment:'Outstanding Performance', id:28},
-  {name:'Garima Singh', performance: 65, rating: 2, comment:'Good', id:29},
-  {name:'Ben Stokes', performance: 50, rating: 2, comment:'Good', id:30}
+  {name:'Neha Garg', performance: 75, rating: 4, comment:'Good', id:27},
+  {name:'Shweta Srivastav', performance: 85, rating: 5, comment:'Outstanding Performance', id:28},
+  {name:'Garima Singh', performance: 65, rating: 4, comment:'Good', id:29},
+  {name:'Ben Stokes', performance: 50, rating: 3, comment:'Average', id:30}
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -93,7 +93,7 @@ const headCells = [
 
 const GlobalTableComponent = () => {
   
-  const [order, setOrder] = React.useState('asc');
+  const [order, setOrder] = React.useState('desc');
   const [orderBy, setOrderBy] = React.useState('performance');
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
